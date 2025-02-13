@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleItem from './Singleitem';
-import { artistArray } from '../assets/database/artists';
+import { Link } from 'react-router-dom';
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
 
@@ -8,7 +8,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
     <div className='item-list'>
                 <div className='item-list__header'>
                     <h2>{title} populares</h2>
-                    <a href={path} className='item-list__link'>Mostrar tudo</a>
+                    <Link to={path} className='item-list__link'>Mostrar tudo</Link>
                 </div>
     
                 <div className='item-list__container'>
