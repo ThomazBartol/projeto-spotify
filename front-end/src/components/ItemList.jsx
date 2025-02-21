@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleItem from './Singleitem';
+import SingleItem from './SingleItem';
 import { Link, useLocation } from 'react-router-dom';
 
 const ItemList = ({ title, items, itemsArray, path, idPath }) => {
